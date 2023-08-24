@@ -12,9 +12,8 @@ class NotesView extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showModalBottomSheet(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16)
-            ),
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16)),
               context: context,
               builder: (context) {
                 return const AddNewNotes();
@@ -33,7 +32,10 @@ class NotesView extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            CustomAppBar(title: 'Notes', icon: Icons.search,),
+            CustomAppBar(
+              title: 'Notes',
+              icon: Icons.search,
+            ),
             Expanded(child: NotesListView()),
           ],
         ),
