@@ -11,15 +11,20 @@ class NotesView extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          showModalBottomSheet(context: context, builder: (context){
-            return AddNewNotes();
-          });
+          showModalBottomSheet(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(16)
+            ),
+              context: context,
+              builder: (context) {
+                return const AddNewNotes();
+              });
         },
-        child: Icon(
+        backgroundColor: Colors.white,
+        child: const Icon(
           Icons.add,
           color: Colors.black,
         ),
-        backgroundColor: Colors.white,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16),
