@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, this.onTap});
-final void Function()? onTap;
+
+  final void Function()? onTap;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
