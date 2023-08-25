@@ -13,20 +13,21 @@ class CustomButton extends StatelessWidget {
       child: GestureDetector(
         onTap: onTap,
         child: Container(
-          width: MediaQuery
-              .of(context)
-              .size
-              .width,
+          width: MediaQuery.of(context).size.width,
           height: 50,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(10),
           ),
-          child:  Center(
-            child: isLoading ? const CircularProgressIndicator(color: Colors.black,):const Text(
-              'Add',
-              style: TextStyle(color: Colors.black, fontSize: 20),
-            ),
+          child: Center(
+            child: isLoading
+                ? const CircularProgressIndicator(
+                    color: Colors.black,
+                  )
+                : const Text(
+                    'Add',
+                    style: TextStyle(color: Colors.black, fontSize: 20),
+                  ),
           ),
         ),
       ),
