@@ -3,9 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
 import 'package:notes_app/views/cubit/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/views/models/notes_model.dart';
-import 'package:notes_app/views/widgets/color_list_view.dart';
-import 'package:notes_app/views/widgets/custom_button.dart';
-import 'package:notes_app/views/widgets/text_field.dart';
+import 'package:notes_app/views/widgets/Color/color_list_view.dart';
+import 'package:notes_app/views/widgets/CustomWidgets/custom_button.dart';
+
+import 'package:notes_app/views/widgets/CustomWidgets/text_field.dart';
 
 class AddNotesForm extends StatefulWidget {
   const AddNotesForm({super.key});
@@ -82,7 +83,3 @@ class _AddNotesFormState extends State<AddNotesForm> {
     );
   }
 }
-
-
-
-

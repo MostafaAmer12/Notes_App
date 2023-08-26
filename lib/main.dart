@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:notes_app/views/cubit/add_note_cubit/add_note_cubit.dart';
 import 'package:notes_app/views/cubit/simple_bloc_observer.dart';
 import 'package:notes_app/views/models/notes_model.dart';
-import 'package:notes_app/views/notes_view.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:notes_app/views/splash_view.dart';
 
 import 'views/cubit/notes_cubit/notes_cubit.dart';
 
@@ -26,7 +25,7 @@ class NotesApp extends StatelessWidget {
       child: MaterialApp(
         theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
         debugShowCheckedModeBanner: false,
-        home: const NotesView(),
+        home: const SplashScreen(),
       ),
     );
   }

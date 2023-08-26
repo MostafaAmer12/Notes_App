@@ -6,6 +6,7 @@ class ColorItem extends StatelessWidget {
 
   final bool isActive;
   final Color color;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
