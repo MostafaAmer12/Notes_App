@@ -14,11 +14,13 @@ class CustomNotesItem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return EditNotesView();
+          return EditNotesView(
+            note: notes,
+          );
         }));
       },
       child: Container(
-        padding: EdgeInsets.only(top: 24, bottom: 24, left: 16),
+        padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           color: Color(notes.color),
